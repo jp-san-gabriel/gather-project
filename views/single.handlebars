@@ -1,0 +1,28 @@
+<div class="single-item-container">
+  <div class="single-item-card">
+    <div class="single-item-contents">
+      <div id="item-title" class="single-item-title">
+        <!--Big Bear-->
+        {{item.title}}
+      </div>
+      <div class="single-item-img">
+        <img src="{{item.imageUrl}}" alt="">
+      </div>
+      <div id="item-description" class="single-item-description">
+        <!--This is a really big bear!!!!-->
+        {{item.description}}
+      </div>
+      <div class="single-item-navigation">
+        <a href="/">
+          <img class="back-arrow" src="/img/back.svg" alt="back">
+        </a>
+        <!--<a href="update.html">-->
+        <a href="/items/{{item._id}}/update">
+          <div class="button update-button">
+            Update
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
